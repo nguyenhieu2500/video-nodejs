@@ -1,10 +1,10 @@
 const express = require("express");
-const config = require("config");
+// const config = require("config");
 
-const adminRelatedRoutes = require("./routes/admin");
-const empsRelatedRoutes = require("./routes/emps");
-const customerRelatedRoutes = require("./routes/customer");
-const loginRelatedRoutes = require("./routes/login");
+// const adminRelatedRoutes = require("./routes/admin");
+// const empsRelatedRoutes = require("./routes/emps");
+// const customerRelatedRoutes = require("./routes/customer");
+// const loginRelatedRoutes = require("./routes/login");
 // const mysql = require('mysql');
 // console.log(express);
 
@@ -35,12 +35,13 @@ app.use(express.json()); //This line is acting as a
 //as json data received from body
 //which is originally stream.
 
-app.use("/admin", adminRelatedRoutes);
-app.use("/emps", empsRelatedRoutes);
-app.use("/customer", customerRelatedRoutes);
-app.use("/login", loginRelatedRoutes);
+// app.use("/admin", adminRelatedRoutes);
+// app.use("/emps", empsRelatedRoutes);
+// app.use("/customer", customerRelatedRoutes);
+// app.use("/login", loginRelatedRoutes);
 
-const portNo = config.get("PORT");
-app.listen(portNo, () => {
-  console.log("Server Started at " + portNo);
-});
+// const portNo = config.get("PORT");
+// app.listen(portNo, () => {
+//   console.log("Server Started at " + portNo);
+// });
+app.listen();
